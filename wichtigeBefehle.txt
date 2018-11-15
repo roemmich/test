@@ -1,1 +1,4 @@
-git init : Git-Verzeichnis erstellen
+git init 		Git-Verzeichnis erstellen
+git status 		Status der Dateien im Verzeichnis (für Kurzversion: -s)
+git add test.txt	Hinzufügen der Datei in die Staging Area (Versionskontrolle) -> dies ist noch kein Commit!
+		Vorbereitung auf den Commit
