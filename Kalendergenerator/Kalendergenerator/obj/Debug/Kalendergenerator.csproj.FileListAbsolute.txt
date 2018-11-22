@@ -1,0 +1,6 @@
+h:\eigenedaten\visual studio 2015\Projects\Kalendergenerator\Kalendergenerator\bin\Debug\Kalendergenerator.exe.config
+H:\EigeneDaten\Visual Studio 2015\Projects\Kalendergenerator\Kalendergenerator\bin\Debug\Kalendergenerator.exe
+H:\EigeneDaten\Visual Studio 2015\Projects\Kalendergenerator\Kalendergenerator\bin\Debug\Kalendergenerator.pdb
+H:\EigeneDaten\Visual Studio 2015\Projects\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergenerator.csprojResolveAssemblyReference.cache
+H:\EigeneDaten\Visual Studio 2015\Projects\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergenerator.exe
+H:\EigeneDaten\Visual Studio 2015\Projects\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergenerator.pdb
