@@ -43,8 +43,7 @@ namespace Kalendergenerator
         public override string ToString()
         {
             // Anzahl Zeichen, die zu Beginn der Kalenderansicht freigehalten werden müssen, um den Tag in der korrekten Spalte anzuzeigen.
-            // "startDay wird subtrahiert, um die benutzerspezifische Ansicht zu erhalten.
-            int begin = Convert.ToInt32(new DateTime(year, monthNumber, 1).DayOfWeek) - startDay;
+            int begin = Convert.ToInt32(new DateTime(year, monthNumber, 1).DayOfWeek);
             // Ist der aktuelle Wochentag kleiner oder gleich dem Startwochentag der Ausgabe, muss neu berechnet werden.
             if (Convert.ToInt32(new DateTime(year, monthNumber, 1).DayOfWeek) < startDay && startDay != 0)
             {

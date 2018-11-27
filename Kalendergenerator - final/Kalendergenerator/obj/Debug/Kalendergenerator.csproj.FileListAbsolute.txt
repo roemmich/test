@@ -18,3 +18,10 @@ C:\Users\Jörg\Desktop\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergen
 C:\Users\Jörg\Desktop\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergenerator.csproj.CoreCompileInputs.cache
 C:\Users\Jörg\Desktop\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergenerator.exe
 C:\Users\Jörg\Desktop\Kalendergenerator\Kalendergenerator\obj\Debug\Kalendergenerator.pdb
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\bin\Debug\Kalendergenerator.exe.config
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\bin\Debug\Kalendergenerator.exe
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\bin\Debug\Kalendergenerator.pdb
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\obj\Debug\Kalendergenerator.csprojResolveAssemblyReference.cache
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\obj\Debug\Kalendergenerator.csproj.CoreCompileInputs.cache
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\obj\Debug\Kalendergenerator.exe
+C:\Users\Jörg\Documents\Git\test\Kalendergenerator - final\Kalendergenerator\obj\Debug\Kalendergenerator.pdb
