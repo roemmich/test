@@ -24,7 +24,7 @@ namespace Kalendergenerator
 
                 }
             }
-            catch (System.IndexOutOfRangeException ex)
+            catch (System.IndexOutOfRangeException)
             {
                 Console.WriteLine("Es wurde kein Argument angegeben! Es wird das aktuelle Jahr verwendet.");
                 //printer.PrintYear(yc.CreateYear().MonthList);
@@ -32,5 +32,6 @@ namespace Kalendergenerator
 
             }
         }
+
     }
 }
