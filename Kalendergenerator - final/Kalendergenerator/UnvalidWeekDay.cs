@@ -6,6 +6,9 @@ namespace Kalendergenerator
     [Serializable]
     internal class UnvalidWeekDayException : Exception
     {
+        /// <summary>
+        /// Tritt auf, wenn ein ungültiger Wochentag angegeben wurde.
+        /// </summary>
         public UnvalidWeekDayException()
         {
         }

@@ -39,16 +39,12 @@ namespace Kalendergenerator
         /// <summary>
         /// Überschreibung der ToString-Methode, um jeden einzelnen Monat im gewählten Format anzuzeigen.
         /// </summary>
-        /// <returns>String des formatierten Monats</returns>
+        /// <returns>String des formatierten Monats.</returns>
         public override string ToString()
         {
             // Anzahl Zeichen, die zu Beginn der Kalenderansicht freigehalten werden müssen, um den Tag in der korrekten Spalte anzuzeigen.
             int begin = Convert.ToInt32(new DateTime(year, monthNumber, 1).DayOfWeek);
             // Ist der aktuelle Wochentag kleiner oder gleich dem Startwochentag der Ausgabe, muss neu berechnet werden.
-            if (Convert.ToInt32(new DateTime(year, monthNumber, 1).DayOfWeek) < startDay && startDay != 0)
-            {
-                begin = 7 - startDay;
-            }
             StringBuilder headerBuilder = new StringBuilder();
             StringBuilder bodyBuilder = new StringBuilder();
             // Monatsnamen darstellen.
@@ -67,8 +63,8 @@ namespace Kalendergenerator
                 }
             }
             headerBuilder.Append("\n____________________\n");
-            // Platzhalter einfügen, um den ersten Tag des Monats in der korrekten Spalte anzuzeigen.
-            // Begin * 3, weil jeder Tag drei Zeichen einnimmt.
+            // Platzhalterstring einfügen, um den ersten Tag des Monats in der korrekten Spalte anzuzeigen.
+            // Begin * 3, weil jeder Tag drei Zeichen einnimmt. Abhängig von der aktuellen Darstellung.
             for (int i = 0; i < (begin * 3); i++)
             {
                 bodyBuilder.Append(' ');
@@ -80,22 +76,13 @@ namespace Kalendergenerator
             {
                 bodyBuilder.Append(String.Format("{0,2}", item)).Append(' ');
                 lineCounter++;
+                // Nach sieben Tagen wird eine neue Zeile begonnen.
                 if (lineCounter % 7 == 0)
                 {
                     bodyBuilder.Append("\n");
                 }
             }
             return headerBuilder.Append(bodyBuilder).ToString();
-        }
-
-        private void headerBuilder()
-        {
-
-        }
-
-        private void bodyBuilder()
-        {
-
         }
     }
 }

@@ -23,8 +23,9 @@ namespace Kalendergenerator
             try
             {
                 int convertedYear = Convert.ToInt32(yearInput);
+                var tempDate = new DateTime();
                 // Ist ein Datum nicht erzeugbar, oder hat die eingegebene Jahreszahl nicht die Länge vier, wird eine Exception geworfen.
-                if (!DateTime.TryParse("01.01." + yearInput, out DateTime tempDate) || yearInput.Length != 4)
+                if (!DateTime.TryParse("01.01." + yearInput, out tempDate) || yearInput.Length != 4)
                 {
                     throw new UnvalidYearException("");
                 }
@@ -73,7 +74,7 @@ namespace Kalendergenerator
         /// <param name="errors"></param>
         private void PrintErrorMessages(StringBuilder errors)
         {
-            // Fehlermedlungen ausgeben
+            // Fehlermeldungen ausgeben
             if (!String.IsNullOrWhiteSpace(ErrorMessage.ToString()))
             {
                 Console.WriteLine(ErrorMessage);

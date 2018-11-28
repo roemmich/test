@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace Kalendergenerator
+﻿namespace Kalendergenerator
 {
     class Program
     {
         static void Main(string[] args)
         {
             YearPrinter printer = new YearPrinter();
+            // Fehlerbehandlung, falls args[] leer ist.
             string firstArgument = "";
             string secondArgument = "";
             try

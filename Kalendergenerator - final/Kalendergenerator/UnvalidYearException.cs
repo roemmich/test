@@ -4,6 +4,9 @@ namespace Kalendergenerator
 {
     public class UnvalidYearException : Exception
     {
+        /// <summary>
+        /// Tritt auf, wenn ein ungültiges Jahr eingegeben wurde.
+        /// </summary>
         public UnvalidYearException()
         {
         }
