@@ -66,9 +66,20 @@ namespace PMC_Klausur_17A_1
         internal static List<Result> ConvertInput(List<double> data, string inputUnit, string outputUnit)
         {
             var result = new List<Result>();
-            
+
             // TODO: Einfügen Umrechnung der Liste der Eingabe-Daten von inputUnit nach outputUnit
             //       Verwenden der Methode ConvertInput für einen Wert
+            foreach (var item in data)
+            {
+                try
+                {
+                    result.Add(new Result(inputUnit, outputUnit, item, ConvertInput(item, inputUnit, outputUnit)));
+                }
+                catch (Exception e)
+                {
+                    //hier weiter
+                }
+            }
             // TODO: Fehlerbehandlung
 
             // TODO: Klasse vollständig dokumentieren

@@ -14,16 +14,36 @@ namespace PMC_Klausur_17A_1
         public string OutputUnit { get; private set; }
         public string FilePath { get; private set; }
 
+        /// <summary>
+        /// Konstruktor. Prüft die Kommandozeilenargumente auf Anzahl und Gültigkeit.
+        /// </summary>
+        /// <param name="args">Kommandozeilenargumente</param>
         public CommandLineParser(string[] args)
         {
-            // TODO: Anzahl und Inhalt Argumente prüfen,
-            // TODO: Im Fehlerfall Exception werfen
-            // TODO: Werte setzen
-            // TODO: Erlaubte Einheiten sind "m", "cm", "km", "inch"
-            // TODO: XML-Kommentare ergänzen
-            InputUnit = "m";
-            OutputUnit = "cm";
-            FilePath = "exampledata.txt";
+            try
+            {
+                // Die Anzahl der Kommandozeilenargumente muss drei sein.
+                if (args.Length != 3)
+                {
+                    throw new MissingArgsElement("Es wurden nicht alle Argumente angegeben.");
+                }
+                // Die Einheiten müssen mit den "Allowed-Units" übereinstimmen.
+                if (!AllowedUnits.Contains(args[0]) || !AllowedUnits.Contains(args[1]))
+                {
+                    throw new InvalidUnitException("Eingabewerte entsprechen keiner gültigen Einheit.");
+                }
+                InputUnit = args[0];
+                OutputUnit = args[1];
+                FilePath = args[2];
+            }
+            catch (MissingArgsElement ma)
+            {
+                Console.WriteLine(ma.Message);
+            }
+            catch (InvalidUnitException iu)
+            {
+                Console.WriteLine(iu.Message);
+            }
         }
 
     }

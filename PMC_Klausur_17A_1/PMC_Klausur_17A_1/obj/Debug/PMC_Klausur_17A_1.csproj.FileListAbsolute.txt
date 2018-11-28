@@ -1,0 +1,7 @@
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\bin\Debug\PMC_Klausur_17A_1.exe.config
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\bin\Debug\exampledata.txt
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\bin\Debug\PMC_Klausur_17A_1.exe
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\bin\Debug\PMC_Klausur_17A_1.pdb
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\obj\Debug\PMC_Klausur_17A_1.csprojResolveAssemblyReference.cache
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\obj\Debug\PMC_Klausur_17A_1.exe
+H:\Git\PMC_Klausur_17A_1\PMC_Klausur_17A_1\obj\Debug\PMC_Klausur_17A_1.pdb

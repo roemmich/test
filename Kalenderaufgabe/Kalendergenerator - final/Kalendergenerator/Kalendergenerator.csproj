@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11E081F3-7140-47D1-9D73-B0CD2C552D3E}</ProjectGuid>
+    <ProjectGuid>{519AF5F3-28EC-407B-92FA-F0EF99C1D052}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PMC_Klausur_17A_1</RootNamespace>
-    <AssemblyName>PMC_Klausur_17A_1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kalendergenerator</RootNamespace>
+    <AssemblyName>Kalendergenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -43,22 +44,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandLineParser.cs" />
-    <Compile Include="Converter.cs" />
-    <Compile Include="FileReader.cs" />
-    <Compile Include="InvalidUnitException.cs" />
-    <Compile Include="MissingArgsElement.cs" />
-    <Compile Include="NegativeValueException.cs" />
+    <Compile Include="Month.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Result.cs" />
+    <Compile Include="UnvalidWeekDay.cs" />
+    <Compile Include="UnvalidYearException.cs" />
+    <Compile Include="Year.cs" />
+    <Compile Include="YearPrinter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="exampledata.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

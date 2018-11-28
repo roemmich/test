@@ -1,0 +1,25 @@
+﻿using System;
+using System.Runtime.Serialization;
+
+namespace PMC_Klausur_17A_1
+{
+    [Serializable]
+    internal class InvalidUnitException : Exception
+    {
+        public InvalidUnitException()
+        {
+        }
+
+        public InvalidUnitException(string message) : base(message)
+        {
+        }
+
+        public InvalidUnitException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected InvalidUnitException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
+    }
+}
