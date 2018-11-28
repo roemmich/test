@@ -27,5 +27,14 @@ namespace PMC_Klausur_17A_1
             InputValue = inputValue;
             OutputValue = outputValue;
         }
+
+        /// <summary>
+        /// Benutzerdefinierte toString() Methode. Formatierung soll Umrechnung darstellen.
+        /// </summary>
+        /// <returns>Formatierter String.</returns>
+        public override string ToString()
+        {
+            return $"{InputValue} {InputUnit} -> {OutputValue} {OutputUnit}";
+        }
     }
 }

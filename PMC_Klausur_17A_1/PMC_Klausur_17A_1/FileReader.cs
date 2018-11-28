@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
 
 namespace PMC_Klausur_17A_1
 {
@@ -22,7 +18,7 @@ namespace PMC_Klausur_17A_1
             // Die auszulesende Datei wird in einem Stringarray gespeichert.
             string[] stringResult = File.ReadAllLines(filePath);
             // Jeder ausgelesene Wert wird auf Gültigkeit geprüft. 
-            // Werte dürfen weder kleiner als 0 sein, und müssen in einen Double-Wert konvertierbar sein.
+            // Werte dürfen nicht kleiner als 0 sein und müssen in einen Double-Wert konvertierbar sein.
             foreach (var item in stringResult)
             {
                 try

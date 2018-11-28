@@ -20,31 +20,20 @@ namespace PMC_Klausur_17A_1
         /// <param name="args">Kommandozeilenargumente</param>
         public CommandLineParser(string[] args)
         {
-            try
+            // Die Anzahl der Kommandozeilenargumente muss drei sein.
+            if (args.Length != 3)
             {
-                // Die Anzahl der Kommandozeilenargumente muss drei sein.
-                if (args.Length != 3)
-                {
-                    throw new MissingArgsElement("Es wurden nicht alle Argumente angegeben.");
-                }
-                // Die Einheiten müssen mit den "Allowed-Units" übereinstimmen.
-                if (!AllowedUnits.Contains(args[0]) || !AllowedUnits.Contains(args[1]))
-                {
-                    throw new InvalidUnitException("Eingabewerte entsprechen keiner gültigen Einheit.");
-                }
-                InputUnit = args[0];
-                OutputUnit = args[1];
-                FilePath = args[2];
+                throw new MissingArgsElement("Es wurden nicht alle Argumente angegeben.");
             }
-            catch (MissingArgsElement ma)
+            // Die Einheiten müssen mit den "Allowed-Units" übereinstimmen.
+            if (!AllowedUnits.Contains(args[0]) || !AllowedUnits.Contains(args[1]))
             {
-                Console.WriteLine(ma.Message);
+                throw new InvalidUnitException("Eingabewerte entsprechen keiner gültigen Einheit.");
             }
-            catch (InvalidUnitException iu)
-            {
-                Console.WriteLine(iu.Message);
-            }
-        }
+            InputUnit = args[0];
+            OutputUnit = args[1];
+            FilePath = args[2];
 
+        }
     }
 }

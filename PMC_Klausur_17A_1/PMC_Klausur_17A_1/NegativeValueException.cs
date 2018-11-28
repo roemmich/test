@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace PMC_Klausur_17A_1
 {
+    /// <summary>
+    /// Tritt auf, wenn ein negativer Wert gefunden wurde.
+    /// </summary>
     [Serializable]
     internal class NegativeValueException : Exception
     {

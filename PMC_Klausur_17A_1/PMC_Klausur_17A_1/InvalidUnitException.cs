@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace PMC_Klausur_17A_1
 {
+    /// <summary>
+    /// Tritt auf, wenn eine ungültige Einheit angegeben wird.
+    /// </summary>
     [Serializable]
     internal class InvalidUnitException : Exception
     {

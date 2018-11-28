@@ -11,19 +11,16 @@ namespace PMC_Klausur_17A_1
                 var cmdLineParser = new CommandLineParser(args);
                 var data = FileReader.GetValues(cmdLineParser.FilePath);
                 var results = Converter.ConvertInput(data, cmdLineParser.InputUnit, cmdLineParser.OutputUnit);
-                ResultPrinter.Print(results);
+                StdOutWriter.WriteResult(results);
+
             }
-            catch(MissingArgsElement ma)
+            catch (ArgumentException ex)
             {
-                Console.WriteLine(ma.Message);
+                Console.WriteLine(ex);
             }
-            catch (InvalidUnitException iu)
+            catch (InvalidOperationException ex)
             {
-                Console.WriteLine(iu.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Es ist ein Fehler aufgetreten. " + ex.Message);
+                Console.WriteLine(ex);
             }
         }
     }

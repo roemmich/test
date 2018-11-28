@@ -1,8 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 
 namespace PMC_Klausur_17A_1
 {
+    /// <summary>
+    /// Klasse für die Umrechnung der Werte
+    /// </summary>
     static class Converter
     {
         /// <summary>
@@ -53,7 +59,7 @@ namespace PMC_Klausur_17A_1
         /// <param name="value">Der Wert</param>
         /// <param name="inputUnit">Eingabeeinheit</param>
         /// <param name="outputUnit">Ausgabeeinheit</param>
-        /// <returns>Gibt den konvertierten Wert zurück.</returns>
+        /// <returns>Der umgerechnete Wert</returns>
         internal static double ConvertInput(double value, string inputUnit, string outputUnit)
         {
             var baseValue = ConvertToBaseUnit(value, inputUnit);
@@ -61,25 +67,18 @@ namespace PMC_Klausur_17A_1
         }
 
         /// <summary>
-        /// Die Methode nimmt eine Liste an double-Werten entgegeb und rechnet sie mit einer Hilfsmethode um.
+        /// Eine Liste von Werten von der Eingabeeinheit in die  Ausgabeeinheit umrechnen
         /// </summary>
-        /// <param name="data">Doubleliste der zu speicherenden Werte.</param>
+        /// <param name="data">Liste mit Werten</param>
         /// <param name="inputUnit">Eingabeeinheit</param>
         /// <param name="outputUnit">Ausgabeeinheit</param>
-        /// <returns>Gibt eine Liste des Datentyps "result" zurück.</returns>
+        /// <returns></returns>
         internal static List<Result> ConvertInput(List<double> data, string inputUnit, string outputUnit)
         {
             var result = new List<Result>();
-            foreach (var item in data)
+            foreach (var entry in data)
             {
-                try
-                {
-                    result.Add(new Result(inputUnit, outputUnit, item, ConvertInput(item, inputUnit, outputUnit)));
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Es ist ein Fehler beim Speichern der Daten aufgetreteten" + e.Message);
-                }
+                result.Add(new Result(inputUnit, outputUnit, entry, ConvertInput(entry, inputUnit, outputUnit)));
             }
             return result;
         }

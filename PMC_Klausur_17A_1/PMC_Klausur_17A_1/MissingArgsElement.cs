@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace PMC_Klausur_17A_1
 {
+    /// <summary>
+    /// Titt auf, wenn eine ungültige Anzahl an Argumenten angegeben wird.
+    /// </summary>
     [Serializable]
     internal class MissingArgsElement : Exception
     {
