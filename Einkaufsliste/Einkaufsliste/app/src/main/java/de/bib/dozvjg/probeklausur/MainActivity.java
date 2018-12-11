@@ -53,6 +53,7 @@ public class MainActivity extends Activity {
         Button buttonAddProduct = (Button) findViewById(R.id.button_add_product);
         final EditText editTextQuantity = (EditText) findViewById(R.id.editText_quantity);
         final EditText editTextProduct = (EditText) findViewById(R.id.editText_product);
+        final EditText editTextPrice = (EditText) findViewById(R.id.editText_price);
 
         buttonAddProduct.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +61,7 @@ public class MainActivity extends Activity {
 
                 String quantityString = editTextQuantity.getText().toString();
                 String product = editTextProduct.getText().toString();
+                String priceString = editTextPrice.getText().toString();
 
                 if(TextUtils.isEmpty(quantityString)) {
                     editTextQuantity.setError(getString(R.string.editText_errorMessage));
@@ -69,12 +71,18 @@ public class MainActivity extends Activity {
                     editTextProduct.setError(getString(R.string.editText_errorMessage));
                     return;
                 }
+                if(TextUtils.isEmpty(priceString)) {
+                    editTextPrice.setError(getString(R.string.editText_errorMessage));
+                    return;
+                }
 
                 int quantity = Integer.parseInt(quantityString);
+                float price = Float.parseFloat(priceString);
                 editTextQuantity.setText("");
                 editTextProduct.setText("");
+                editTextPrice.setText("");
 
-                mViewModel.createShoppingMemo(product, quantity);
+                mViewModel.createShoppingMemo(product, quantity, price);
 
                 InputMethodManager inputMethodManager;
                 inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);

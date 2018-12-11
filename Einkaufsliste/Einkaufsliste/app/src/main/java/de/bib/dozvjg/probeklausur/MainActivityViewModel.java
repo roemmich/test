@@ -29,8 +29,8 @@ public class MainActivityViewModel extends ViewModel{
         dataSource.close();
     }
 
-    public void createShoppingMemo(String product, int quantity) {
-        dataSource.createShoppingMemo(product, quantity);
+    public void createShoppingMemo(String product, int quantity, float price) {
+        dataSource.createShoppingMemo(product, quantity, price);
     }
 
     public List<ShoppingMemo> getAllShoppingMemos() {

@@ -19,7 +19,8 @@ public class ShoppingMemoRepository {
     private String[] columns = {
             ShoppingMemoDbHelper.COLUMN_ID,
             ShoppingMemoDbHelper.COLUMN_PRODUCT,
-            ShoppingMemoDbHelper.COLUMN_QUANTITY
+            ShoppingMemoDbHelper.COLUMN_QUANTITY,
+            ShoppingMemoDbHelper.COLUMN_PRICE
     };
 
 
@@ -39,10 +40,11 @@ public class ShoppingMemoRepository {
         Log.d(LOG_TAG, "Datenbank mit Hilfe des DbHelpers geschlossen.");
     }
 
-    public ShoppingMemo createShoppingMemo(String product, int quantity) {
+    public ShoppingMemo createShoppingMemo(String product, int quantity, float price) {
         ContentValues values = new ContentValues();
         values.put(ShoppingMemoDbHelper.COLUMN_PRODUCT, product);
         values.put(ShoppingMemoDbHelper.COLUMN_QUANTITY, quantity);
+        values.put(ShoppingMemoDbHelper.COLUMN_PRICE, price);
 
         long insertId = database.insert(ShoppingMemoDbHelper.TABLE_SHOPPING_LIST, null, values);
 
@@ -61,12 +63,14 @@ public class ShoppingMemoRepository {
         int idIndex = cursor.getColumnIndex(ShoppingMemoDbHelper.COLUMN_ID);
         int idProduct = cursor.getColumnIndex(ShoppingMemoDbHelper.COLUMN_PRODUCT);
         int idQuantity = cursor.getColumnIndex(ShoppingMemoDbHelper.COLUMN_QUANTITY);
+        int idPrice = cursor.getColumnIndex(ShoppingMemoDbHelper.COLUMN_PRICE);
 
         String product = cursor.getString(idProduct);
         int quantity = cursor.getInt(idQuantity);
         long id = cursor.getLong(idIndex);
+        float price = cursor.getFloat(idPrice);
 
-        ShoppingMemo shoppingMemo = new ShoppingMemo(product, quantity, id);
+        ShoppingMemo shoppingMemo = new ShoppingMemo(product, quantity, id, price);
 
         return shoppingMemo;
     }
