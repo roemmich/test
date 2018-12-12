@@ -53,8 +53,7 @@ public class ShoppingMemo {
 
     @Override
     public String toString() {
-        String output = quantity + " x " + product;
-
+        String output = quantity + " x " + product + " = " + Float.toString(quantity*price).replace('.',',') + " €";
         return output;
     }
 }

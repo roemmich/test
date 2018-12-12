@@ -19,7 +19,7 @@
 
         <EditText
             android:id="@+id/editText_quantity"
-            android:layout_width="47dp"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="@string/editText_hint_quantity"
