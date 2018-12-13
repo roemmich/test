@@ -5,6 +5,7 @@ H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.pdb
 H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.csprojResolveAssemblyReference.cache
 H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.exe
 H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.pdb
+<<<<<<< HEAD:C#/ToDoCo/ToDoCo/ToDoCo/obj/Debug/ToDoCo.csproj.FileListAbsolute.txt
 H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.exe.config
 H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.exe
 H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.pdb
@@ -12,3 +13,13 @@ H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\test.csv
 H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.exe
 H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.pdb
 H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\bin\Debug\test.csv
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.exe.config
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.exe
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.pdb
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.csprojResolveAssemblyReference.cache
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.csproj.CoreCompileInputs.cache
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.exe
+C:\Users\Jörg\Documents\Git\test\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.pdb
+>>>>>>> 3303585473bd0ad9fc1a3432594b503d72b4c3b9:ToDoCo/ToDoCo/ToDoCo/obj/Debug/ToDoCo.csproj.FileListAbsolute.txt
