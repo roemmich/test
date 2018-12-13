@@ -5,3 +5,10 @@ H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.pdb
 H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.csprojResolveAssemblyReference.cache
 H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.exe
 H:\PMC\3.Sem\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.pdb
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.exe.config
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.exe
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.pdb
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\test.csv
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.exe
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\bin\Debug\ToDoCo.pdb
+H:\Git\C#\ToDoCo\ToDoCo\ToDoCo\obj\Debug\ToDoCo.csprojResolveAssemblyReference.cache

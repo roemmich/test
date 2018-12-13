@@ -11,6 +11,8 @@ namespace ToDoCo
         LIST,
         REMOVE,
         CLOSE,
-        ADD_ITEM
+        ADD_ITEM,
+        ADD_TERMIN,
+        ADD_PRIO
     }
 }

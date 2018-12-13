@@ -12,8 +12,10 @@ namespace ToDoCo
         public Dictionary<string, Commands> AllowedParams = new Dictionary<string, Commands>
         {
             { "-l" , Commands.LIST },
-            { "-a" , Commands.ADD_ITEM},
-            { "-r" , Commands.REMOVE }
+            { "-a" , Commands.ADD_ITEM },
+            { "-r" , Commands.REMOVE },
+            { "-t" , Commands.ADD_TERMIN },
+            { "-p" , Commands.ADD_PRIO }
         };
 
         public string FileName { get; private set; }

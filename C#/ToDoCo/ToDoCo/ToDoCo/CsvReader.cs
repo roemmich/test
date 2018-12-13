@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ToDoCo
 {
-    public class CsvReader
+    public class CSVReader
     {
         /// <summary>
         /// The 9X4 _ActionDecider array represents the transition table.
@@ -35,7 +35,7 @@ namespace ToDoCo
         /// </summary>
         public int CurrentLine { get; private set; }
 
-        public CsvReader(string fileName, bool hasHeader)
+        public CSVReader(string fileName, bool hasHeader)
         {
             BuildTransitionTable();
             FileInfo = new FileInfo(fileName);

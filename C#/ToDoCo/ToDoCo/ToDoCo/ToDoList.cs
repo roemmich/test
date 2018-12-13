@@ -28,7 +28,7 @@ namespace ToDoCo
 
         private void InitFromFile(string path)
         {
-            CsvReader reader = new CsvReader(path, false);
+            CSVReader reader = new CSVReader(path, false);
 
             foreach (var line in reader.ParseFile())
             {

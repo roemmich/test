@@ -44,13 +44,16 @@
   <ItemGroup>
     <Compile Include="CommandLineParser.cs" />
     <Compile Include="Commands.cs" />
-    <Compile Include="CsvReader.cs" />
-    <Compile Include="CsvWriter.cs" />
+    <Compile Include="CSVReader.cs" />
+    <Compile Include="CSVWriter.cs" />
+    <Compile Include="Priorities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToDoDate.cs" />
     <Compile Include="ToDoEntry.cs" />
     <Compile Include="ToDoList.cs" />
     <Compile Include="CommandMissingException.cs" />
+    <Compile Include="ToDoPrio.cs" />
     <Compile Include="UnknownCommandException.cs" />
   </ItemGroup>
   <ItemGroup>

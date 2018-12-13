@@ -29,8 +29,8 @@ namespace ToDoCo
                     {
                         var newEntry = new ToDoEntry(cmdLineArgs.OptionalArguments[1], cmdLineArgs.OptionalArguments[2]);
                         list.Items.Add(newEntry);
-                        CsvWriter cs = new CsvWriter();
-                        cs.Write(newEntry, cmdLineArgs.FileName);
+                        CSVWriter cs = new CSVWriter(cmdLineArgs.FileName);
+                        cs.Write(newEntry);
                     }
                     catch (Exception e)
                     {
@@ -41,6 +41,10 @@ namespace ToDoCo
                 case Commands.CLOSE:
                     throw new NotImplementedException();
                 case Commands.REMOVE:
+                    throw new NotImplementedException();
+                case Commands.ADD_TERMIN:
+                    throw new NotImplementedException();
+                case Commands.ADD_PRIO:
                     throw new NotImplementedException();
             }
            
