@@ -1,0 +1,9 @@
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\bin\Debug\AstronautsInSpace.exe.config
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\bin\Debug\AstronautsInSpace.exe
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\bin\Debug\AstronautsInSpace.pdb
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\obj\Debug\AstronautsInSpace.csprojResolveAssemblyReference.cache
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\obj\Debug\AstronautsInSpace.exe
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\obj\Debug\AstronautsInSpace.pdb
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\bin\Debug\Newtonsoft.Json.dll
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\bin\Debug\Newtonsoft.Json.pdb
+h:\eigenedaten\visual studio 2015\Projects\AstronautsInSpace\AstronautsInSpace\bin\Debug\Newtonsoft.Json.xml
