@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Einkaufsliste</string>
+    <string name="editText_hint_quantity">Anzahl</string>
+    <string name="editText_hint_product">Produkt</string>
+    <string name="button_add_product">+</string>
+    <string name="editText_errorMessage">Das Feld darf nicht leer sein.</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="button_clear_all">Einträge löschen</string>
+    <string name="deleted">gelöscht</string>
+    <string name="deletedAll">Alle gelöscht</string>
+    <string name="added">hinzugefügt</string>
+
+
+</resources>
